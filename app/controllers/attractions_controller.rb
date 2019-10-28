@@ -21,6 +21,8 @@ class AttractionsController < ApplicationController
     end
 
     def update
+      @attraction = Attraction.update(attraction_params)
+      redirect_to attraction_path(@attraction)
     end
 
     def destroy
