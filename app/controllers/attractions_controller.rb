@@ -26,6 +26,7 @@ class AttractionsController < ApplicationController
     end
 
     def destroy
+      @attraction.delete
     end
 
     private
